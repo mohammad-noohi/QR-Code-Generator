@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -22,6 +30,7 @@ a {
 .app-section {
   height: 100vh;
   background-color: lightblue;
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -30,10 +39,19 @@ a {
   background-color: #fff;
   padding: 5rem;
   border-radius: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .app-title {
@@ -46,6 +64,8 @@ a {
   height: 20rem;
   overflow: hidden;
   display: none;
+  -webkit-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
@@ -64,6 +84,8 @@ a {
 }
 
 .app-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1.2rem;
 }
@@ -85,6 +107,8 @@ a {
 .download-btn {
   background-color: #ddd;
   color: #000 !important;
+  -webkit-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: not-allowed;
 }
