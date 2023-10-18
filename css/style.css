@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* QR code style */
+
+.app-section {
+  height: 100vh;
+  background-color: lightblue;
+  display: grid;
+  place-items: center;
+}
+
+.app-box {
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.qr-pic-wrapper {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  display: none;
+  transition: all 100ms linear;
+}
+
+.show-qr-pic {
+  display: block;
+}
+
+.qr-input {
+  border: none;
+  outline: none;
+  background-color: #eee;
+  font-size: 1.8rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  margin: 4rem 0 3rem 0;
+}
+
+.app-btns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.app-btns button {
+  text-transform: capitalize;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.generate-btn {
+  background-color: rgb(42, 52, 168);
+  cursor: pointer;
+}
+
+.download-btn {
+  background-color: #ddd;
+  color: #000 !important;
+  transition: all 100ms linear;
+  cursor: not-allowed;
+}
+
+.download-btn.enable-btn:hover {
+  background-color: rgba(42, 53, 168, 0.222);
+}
+
+.enable-btn {
+  cursor: pointer;
+}
